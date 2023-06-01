@@ -37,7 +37,7 @@ const cardAdded = async (genFunction, tagHtml, classCirculo) => {
     <div class="card">
       <div class="card-body">
       <p class="${classCirculo}"></p>
-        <h5 class="card-title text-capitalize">${value.name}</h5>
+        <h5 class="card-title">${value.name}</h5>
         <p class="card-text">Estatura: ${value.height} cm. Peso: ${value.mass} kg.</p>
       </div>
     </div>
