@@ -1,7 +1,97 @@
-#titulo{
-    padding: 3%;
+#titulo {
+    padding: 2%;
     background-color: #73a56f;
     color: #000000;
     text-align: center;
     font-family: arial;
+    font-weight: bold;
 }
+
+.row {
+    display: grid;
+    column-gap: 0.5;
+    grid-template-columns: 5rem 1rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'mostrar vertical_line deck';
+} 
+
+.line {
+    padding: 0;
+    grid-area: vertical_line;
+    border-left: 3px solid #fd9e5f;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.point {
+    position: relative;
+    left: -6.6px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #f76402;
+}
+
+.deck {
+    grid-area: deck;
+    display: grid;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
+.card {
+    align-items: center;
+    grid-template-columns: 7rem 1fr;
+    box-shadow: 0 8px 10px 0 rgba(102, 115, 143, 0.2), 0 6px 10px 0 rgba(102, 115, 143, 0.19);
+    width: 28rem;
+}
+
+#card1 {
+    text-align: center;
+    margin-top: 130%;
+
+}
+
+#card2 {
+    text-align: center;
+    margin-top: 130%;
+}
+
+#card3 {
+    text-align: center;
+    margin-top: 130%;
+}
+
+.circulo1 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ef6c70;
+    justify-self: center;
+}
+
+.circulo2 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #92f292;
+    justify-self: left;
+}
+
+.circulo3 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #62dff2;
+    justify-self: left;
+}
+
