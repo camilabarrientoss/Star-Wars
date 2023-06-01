@@ -5,6 +5,7 @@
     text-align: center;
     font-family: arial;
     font-weight: bold;
+    margin-bottom: 2%;
 }
 
 .row {
@@ -43,7 +44,7 @@
 }
 
 .card {
-    align-items: center;
+    align-items: left;
     grid-template-columns: 7rem 1fr;
     box-shadow: 0 8px 10px 0 rgba(102, 115, 143, 0.2), 0 6px 10px 0 rgba(102, 115, 143, 0.19);
     width: 28rem;
